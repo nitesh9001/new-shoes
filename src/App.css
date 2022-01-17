@@ -1,0 +1,398 @@
+:root {
+  --border_col : rgba(230, 230, 230, 0.842);
+  --box_shadow: rgba(231, 231, 231, 0.837)
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.app{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y:hidden;
+}
+
+.overlays-dashboard{
+  height: 100%;
+  overflow-y:hidden
+}
+
+.main-nav-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.945);
+  border-bottom: .5px solid var(--border_col);
+}
+.logo_name{
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-logo{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  justify-items: center;
+  display: flex;
+}
+.main_wrapper_content{
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  justify-items: center;
+  display: flex;
+}
+.main_wrapper_sidebar{
+  width: 25%;
+  border-right: 1px solid var(--border_col);
+}
+
+.main_card_wrap_section{
+  width: 75%;
+  margin-bottom: 40px;
+  height: 80vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y:scroll;
+}
+.main_card_wrap{
+  width: 90%;
+  margin-bottom: 40px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.action_section{
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.board_title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.board_action_sort select{
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: .5px;
+  background-color: transparent;
+}
+
+/* css for card */
+.card{
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.952);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px var(--box_shadow);
+  position: relative;
+
+}
+
+.color_side{
+  position: absolute;
+  padding: 20px 2px;
+  left: -2px;
+  top: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border_col);
+}
+.shoes_name{
+  font-size: 13px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shoes_brand{
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image_card{
+  aspect-ratio: 4/3;
+  width: 200px;
+  margin: 0 auto;
+}
+.image_card_icon{
+  aspect-ratio: 1;
+  width: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.img_te_box{
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px var(--box_shadow);
+}
+.footer_card{
+  display: flex;
+  width: 80%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+/* css for search box */
+.search_box{
+  width: 400px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px 1px var(--box_shadow);
+
+}
+.search_box input{
+  outline: none;
+  font-weight: bold;
+  width: 90%;
+  box-shadow: none;
+  border: none;
+  font-size: 17px;
+  padding-left: 5px;
+}
+input::-webkit-input-placeholder{
+  font-weight: bold;
+}
+
+/* side bar css */
+.main_side_bar_element{
+  height: 90vh;
+  overflow-y: scroll;
+}
+.main_side_bar_first{
+  width: 100%;
+  border-bottom: 1px solid var(--border_col);
+  height: 50px;
+}
+.main_side_bar_second{
+  width: 100%;
+  border-bottom: 1px solid var(--border_col);
+  height: 40px;
+  padding: 20px auto;
+ 
+}
+.main_side_bar_second button{
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  justify-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.main_side_bar_price{
+  width: 100%;
+  border-bottom: 1px solid var(--border_col);
+  height: 150px;
+  padding: 20px auto;
+}
+.price_range_wrapper{
+  width: 90%;
+  margin: 20px auto;
+}
+.price_title{
+   width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.radio_selector{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 1px;
+  border-bottom: 1px solid var(--border_col);
+}
+
+
+/* checkbox custom */
+
+.container_radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.label_radio{
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+/* Hide the browser's default radio button */
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 25;
+  left: 20;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 20%;
+}
+
+/* On mouse-over, add a grey background color */
+.container_radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_radio input:checked ~ .checkmark {
+  background-color: #020202;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_radio .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 20%;
+	background: white;
+}
+
+/* price slider css */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.slider{
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress{
+  height: 100%;
+  /* left: 20%;
+  right: 20%; */
+  position: absolute;
+  border-radius: 5px;
+  background: #17A2B8;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.s_button{
+  width: 20px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  border: 1px solid var(--border_col);
+  border-radius: 10px;
+  background-color: #eee;
+}
+.s_button:hover,
+.s_button.active{
+  background-color:white !important;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1) !important;
+}
+.main_side_bar_size{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.main_side_bar_size{
+  width: 100%;
+  border-bottom: 1px solid var(--border_col);
+  height: auto;
+  padding: 20px auto;
+}
