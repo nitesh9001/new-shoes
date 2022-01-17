@@ -9,8 +9,8 @@ var options = {
   url: `${apiEndPoint}/sneakers`,
   params: {limit: 40},
   headers: {
-    'x-rapidapi-host': 'v1-sneakers.p.rapidapi.com',
-    'x-rapidapi-key': '1266c958c4msh08ff300fef225b6p1d3e09jsn40ec9b75defc'
+    'x-rapidapi-host': process.env.X_RAPIDAPI_HOST,
+    'x-rapidapi-key': process.env.X_RAPIDAPI_API
   }
 };
 
